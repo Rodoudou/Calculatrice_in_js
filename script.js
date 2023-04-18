@@ -84,6 +84,7 @@ if (restart) {
 } else {
   alert("Merci d'avoir utilisé notre calculatrice !");
 }
-
-
+// Ajouter un titre avec le DOM
+const title = document.title = "La Calculetta !"
+document.getElementById("titre").innerHTML = title;
 

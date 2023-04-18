@@ -1,4 +1,4 @@
-const restart = false;
+let restart = false;
 let result;
 let choix;
 let premierNombre, deuxiemeNombre;
@@ -77,6 +77,13 @@ try {
 } catch (error) {
   alert(error);
 }
-restart = confirm("Souhaitez vous faire un autre calcule ?");
+
+restart = confirm("Voulez-vous refaire un calcul ?");
+if (restart) {
+  window.location.reload(); // recharger la page si l'utilisateur veut refaire un calcul
+} else {
+  alert("Merci d'avoir utilisé notre calculatrice !");
+}
+
 
 
